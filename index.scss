@@ -1,0 +1,741 @@
+
+html{
+  scroll-behavior: smooth;
+}    
+ $color: white;
+ $bodycolor:#43283A;
+ $customfont: 'Viaoda Libre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+ @mixin button {
+                   font-size: 0.8rem;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    text-transform: capitalize;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    background-color: white;
+                    border: none;
+                    outline: none;
+ }
+body{
+    background-color: $bodycolor;
+     overflow-x: hidden;
+      ::-webkit-scrollbar{
+              background-color: whitesmoke;
+              width: 5px;
+           }
+           ::-webkit-scrollbar-thumb{
+              background-color:whitesmoke;
+           }
+      .icon{
+         border-radius: 50%;
+      } 
+      .nav-menu{
+         display: none;
+      }
+
+      .nav-mobile{
+          display: none;
+      }
+    header{
+          position: fixed;
+          top: 10%;
+          left: 0%;
+          z-index: 9999;
+      nav{
+         display: flex;
+         justify-content: space-between;
+         width: 95%;
+         ul{
+         display: flex;
+          li{
+          padding-left: 10px;
+          list-style: none;
+          a{
+            color: white;
+            font-size: 0.7rem;
+          }
+          }
+         }
+      }
+    }
+
+    #intro{
+        font-family: $customfont;
+        z-index: -1;
+       img{
+            position: relative;
+             top: 0%;
+             width: 100%;
+              left: 0%;
+       }
+       button{
+             display: none;
+       }
+       .text{
+             position: absolute;
+             top: 35%;
+             left: 0%;
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 6.2rem;
+            letter-spacing: 4px;
+        }
+        form{
+                margin-top: 70px ;  
+                margin-left: 50px; 
+                input{
+                  height: 7vh;
+                  border: 1px solid white;
+                  background-color: transparent;
+                  color: white;
+                  outline: none;
+                  padding: 10px;
+                }
+                #mail{
+                  width: 20%;
+                  border-right: none;
+                } 
+                .submit{
+                  width: 5%;
+                }
+                h3{
+                  font-size: 3rem;
+                  color: white;
+                }
+           }
+
+       }
+         .logo{
+           position: absolute;
+            top: 0%;
+            z-index: 2;
+            left: 38%;
+            width: 25%;
+        }
+    }
+    main{
+          font-family: $customfont;
+      center{
+              padding-top: 150px;   
+               color: white;
+          p{
+             font-size: 1.4rem;
+          }
+          h1{
+              font-size: 3rem;
+              font-weight: 700;
+              letter-spacing: 4px;
+              margin-bottom: 50px;
+          } 
+          .newh1{
+               font-size: 6rem;
+               letter-spacing: 5px;
+          }
+          span{
+               font-size: 2rem;
+               font-weight: 500;
+          }
+      }
+      #products{
+                  margin-top: 200px;
+                  color: white;
+            .thumbs{
+                padding: 0px 20px;
+                background-color:#372230;
+                border-radius: 50%;
+                width: 100%;
+                transition: 0.3s;
+                cursor: pointer;
+                &:hover{
+                   transform: scale(1.02);
+                }
+                img{
+                   width: 100%;
+                   transform:rotateZ(5deg);
+                }
+                .new{
+                   margin-top: -100px;
+                }
+            }
+            .details{
+                margin-top: 10px; 
+                padding: 50px 80px;    
+                strong{
+                  font-size: 2rem;
+                  font-weight: 400;
+                }
+                span{
+                   font-weight: 200;
+                   font-size: 1rem;
+                }
+                h5{
+                  small{
+                     font-size: 10px;
+                     font-weight: 100;
+                     letter-spacing: 2px;
+                  }
+                }
+                p{
+                   font-size: 1.3rem;
+                   font-weight: 500;
+                   letter-spacing: 1px;
+                }
+                a{
+                   color: white;
+                   font-size: 12px;
+                   text-transform: uppercase;
+                }
+                .buy{
+                     @include button();
+                     text-transform: uppercase
+                }
+                .sub{
+                   @include button();
+                   background-color: transparent;
+                    border: 1px solid white;
+                    outline: none;
+                    color: white;
+                }
+            }
+      
+      }
+
+      #product-B{
+          color: white;
+          padding: 10px 150px;
+          img{
+            width: 100%;
+          }
+          button{
+            @include button();
+          }
+      }
+      .big-logo{
+           background-image: url(img/p.webp);
+           height: 100vh;
+           img{
+               width: 25%;
+           }
+      }
+    }
+    .shop-container{
+        background-color: white;
+        padding: 40px;
+        .shop{
+           background-image: url(img/n1.webp);
+           height: 100vh;
+           h1{
+              font-size: 5rem;
+              margin-top: 20px
+           }
+           button{
+             @include button();
+             text-transform: uppercase;
+           }
+        }
+    }
+    .info{
+        color: white;
+        h1{
+            font-size: 8rem;
+        }
+        .col-sm{
+            border: 1px solid rgb(112, 110, 110);
+            margin: 50px;
+            padding: 30px;
+            span{
+               font-size: 0.6rem;
+               letter-spacing: 1px;
+            }
+            p{
+               font-size: 00.8rem;
+            }
+        }
+    }
+    .recipe{
+           background-color: whitesmoke;
+           padding: 50px;
+           
+       h1{
+          font-size: 2rem;
+          text-transform: uppercase;
+          color: #43283A;
+      }
+    }
+     .recipe-container{
+           display: flex;
+           justify-content: start;
+           align-items: center;
+           color: #43283A;
+           
+           overflow-x: scroll;
+           overflow-y: hidden;
+            a{
+               color: #43283A;
+               text-decoration: none;
+               text-transform: uppercase;
+               font-size: 0.5rem;
+               word-spacing: 3px;
+            }
+            img{
+                width: 20rem;
+                height: 25rem;
+                transition: all ease-in-out 250ms;
+            }
+            .recipe-thumb{
+               margin: 30px;
+               width: 20rem;
+               height: 45rem;
+               transition: 0.5s;
+               cursor: pointer;
+               h2{
+                 text-transform: uppercase;
+               }
+               &:hover{
+                  img{
+                    transform: scale(1.03);
+                  }
+               
+               }
+            }
+      }
+      #jingle{
+      font-family: $customfont;
+           background-image:linear-gradient(60deg, rgba(37, 4, 17, 0.6),
+           rgba(32, 3, 22, 0.7),rgba(0,0,0,0.8)),url(img/s5.jpg);
+           padding-top: 100px;
+           background-size: cover;
+          h1{
+               color: white;
+               font-size: 6rem;
+               font-weight: 400;
+          }
+          p{
+              color: white;
+              font-size: 1rem;
+              letter-spacing: 2px;
+          }
+          img{
+             width: 70%;
+          }
+      }
+      footer{
+            font-family: $customfont;
+           color: white;
+           padding-top: 100px;
+           margin: 40px;
+           ul{
+             display: flex;
+             justify-content: space-around;
+             width: 100%;
+             margin-top: 120px;
+             li{
+                list-style: none;               
+             }
+             a{
+                color: white;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                font-size: 0.6rem;
+             }
+           }
+           .natra{
+             text-align: right;
+              strong{
+                 font-size: 2rem;
+                 font-weight: 400;
+              }
+              small{
+                 font-size: 0.6rem;
+                 font-weight: 100;
+              }
+           }
+           form{
+                margin-top: 0px ;   
+                input{
+                  height: 6vh;
+                  border: 1px solid white;
+                  background-color: transparent;
+                  color: white;
+                  outline: none;
+                }
+                #mail{
+                  width: 70%;
+                  border-right: none;
+                } 
+                h3{
+                  font-size: 3rem;
+                }
+           }
+           span{
+                color: gray;
+                letter-spacing: 1px;
+              text-align: center;
+              margin-top: 20px;
+           }
+      }
+}
+@media screen and (max-width:767px) {
+
+      body{
+      ::-webkit-scrollbar{
+         display: none;
+      }
+       overflow-x: hidden;
+    header{
+          position: fixed;
+          top: 10%;
+          left: 0%;
+          z-index: 9999;
+      nav{
+         display: none;
+      }
+    }
+
+    #intro{
+        font-family: $customfont;
+        z-index: -1;
+       img{
+            position: relative;
+             top: 0%;
+             width: 100%;
+             height: 100vh;
+              left: 0%;
+       }
+       button{
+             display: none;
+       }
+       .text{
+             position: absolute;
+             top: 30%;
+             left: 0%;
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            letter-spacing: 4px;
+        }
+        form{
+                margin-top: 250px ;  
+                margin-left: 20px; 
+                #mail{
+                  width: 80%;
+                  border-right: none;
+                } 
+                .submit{
+                  width: 15%;
+                }
+           }
+
+       }
+         .logo{
+            left: 16%;
+            width: 70%;
+            height: 20vh;
+        }
+    }
+    main{
+          font-family: $customfont;
+      center{
+              padding-top: 150px;   
+               color: white;
+          p{
+             font-size: 0.8rem;
+          }
+          h1{
+              font-size: 2rem;
+              font-weight: 700;
+              letter-spacing: 4px;
+              margin-bottom: 50px;
+          } 
+          .newh1{
+               font-size: 1.2rem;
+               letter-spacing: 5px;
+          }
+          span{
+               font-size: 1rem;
+               font-weight: 500;
+          }
+      }
+      #products{
+                  margin-top: 200px;
+                  color: white;
+            .thumbs{
+                padding: 0px 20px;
+                background-color:#372230;
+                border-radius: 50%;
+                width: 100%;
+                transition: 0.3s;
+                cursor: pointer;
+                &:hover{
+                   transform: scale(1.02);
+                }
+                img{
+                   width: 100%;
+                   transform:rotateZ(5deg);
+                }
+                .new{
+                   margin-top: -50px;
+                }
+            }
+            .details{
+                margin-top: 10px; 
+                padding: 50px 20px;    
+                strong{
+                  font-size: 1.5rem;
+                }
+                span{
+                   font-weight: 200;
+                   font-size: 0.7rem;
+                }
+                h5{
+                  small{
+                     font-size: 10px;
+                  }
+                }
+                p{
+                   font-size: 0.6rem;
+                }
+                a{
+                   color: white;
+                   font-size: 10px;
+                   text-transform: uppercase;
+                }
+                .buy{
+                     font-size: 0.5rem
+                }
+                .sub{
+                    font-size: 0.5rem
+                }
+            }
+      
+      }
+
+      #product-B{
+          padding: 10px 50px;
+      }
+      .big-logo{
+           background-image: url(img/p.webp);
+           height: 70vh;
+           img{
+               width: 45%;
+           }
+      }
+    }
+    .shop-container{
+               padding: 10px;
+        .shop{
+           background-image: url(img/n1.webp);
+           background-size: cover;
+           height: 70vh;
+           h1{
+              font-size: 2rem;
+           }
+           button{
+             font-size: 0.6rem;
+           }
+        }
+    }
+    .info{
+        color: white;
+        h1{
+            font-size: 2rem;
+        }
+        .col-sm{
+            border: 1px solid rgb(112, 110, 110);
+            margin: 40px;
+            padding: 30px;
+            width: 20rem;
+            span{
+               font-size: 0.6rem;
+               letter-spacing: 1px;
+            }
+            p{
+               font-size: 0.8rem;
+            }
+        }
+    }
+    .recipe{
+           background-color: whitesmoke;
+           padding: 20px;
+           
+       h1{
+          font-size: 1.4rem;
+          font-family: $customfont;
+      }
+    }
+     .recipe-container{
+            img{
+                width: 18rem;
+                height: 25rem;
+                transition: all ease-in-out 250ms;
+            }
+            .recipe-thumb{
+               margin: 20px;
+               width: 20rem;
+               height: 38rem;
+               h2{
+                 font-size: 1rem;
+               }
+               p{
+                font-size: 0.7rem;
+               }
+            }
+      }
+      #jingle{
+           padding-top: 100px;
+      
+          h1{
+               color: white;
+               font-size: 2rem;
+               font-weight: 400;
+          }
+          p{
+              color: white;
+              font-size: 0.7rem;
+              letter-spacing: 2px;
+          }
+          img{
+             width: 50%;
+          }
+      }
+      .changes.nav-menu{
+           left: -10%;
+      }
+      .changesclose.nav-menu{
+           left: -100%;
+      }
+      .nav-mobile{
+          display: block;
+          ul{
+              display: flex;
+              justify-content: space-between;
+              width: 85%;
+              position: fixed;
+              top: 2%;
+              left: 0%;
+              z-index: 1;
+              list-style: none;
+            li{
+               a{
+                color: white;
+                text-decoration: none;
+                  background-color: rgba(37, 4, 17, 0.6);
+                  padding: 10px 7px;
+                  border-radius: 50%;
+               }
+            }        
+          }
+      }
+      .nav-menu{
+              font-family: $customfont;
+                display: block;
+                background-color: $bodycolor;
+                height: 150vh;
+                position: fixed;
+                z-index: 22;
+                width: 100%;
+                top: 0%;
+                left: -100%;
+                transition: 0.8s;
+                color: white;
+             ul{
+               list-style: none;
+               display: block;
+               align-items: center;
+               text-align: center;
+               padding-top: 150px;
+               li{
+                  margin-top: 40px;
+                  a{
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    color: white;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                  }
+               }
+             }
+             .close{
+               position: absolute;
+               top: 1%;
+               left: 15%;
+               padding: 10px;
+               color: white;
+               a{
+                border-radius: 50%;
+                color: white;
+                border: none;
+                text-align: center;
+                font-size: 1.2rem;
+                padding: 5px 10px;
+               background-color:rgba(37, 4, 17, 0.9);
+               }
+             }
+  }
+      footer{
+            font-family: $customfont;
+           color: white;
+           padding-top: 20px;
+           margin: 40px;
+           ul{
+             display: none;
+           }
+           .natra{
+             text-align: right;
+             display: none;
+              strong{
+                 font-size: 2rem;
+                 font-weight: 400;
+              }
+              small{
+                 font-size: 0.6rem;
+                 font-weight: 100;
+              }
+           }
+           form{
+                margin-top: 0px ;   
+                input{
+                  height: 6vh;
+                  border: 1px solid white;
+                  background-color: transparent;
+                  color: white;
+                  outline: none;
+                }
+                #mail{
+                  width: 70%;
+                  border-right: none;
+                } 
+                h3{
+                  font-size: 2rem;
+                }
+           }
+           span{
+                color: gray;
+                letter-spacing: 1px;
+              text-align: center;
+              margin-top: 20px;
+              font-size: 0.7rem;
+           }
+      }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

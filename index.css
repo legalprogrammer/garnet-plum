@@ -1,0 +1,827 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #43283A;
+  overflow-x: hidden;
+}
+
+body ::-webkit-scrollbar {
+  background-color: whitesmoke;
+  width: 5px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: whitesmoke;
+}
+
+body .icon {
+  border-radius: 50%;
+}
+
+body .nav-menu {
+  display: none;
+}
+
+body .nav-mobile {
+  display: none;
+}
+
+body header {
+  position: fixed;
+  top: 10%;
+  left: 0%;
+  z-index: 9999;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav ul li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+body header nav ul li a {
+  color: white;
+  font-size: 0.7rem;
+}
+
+body #intro {
+  font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: -1;
+}
+
+body #intro img {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  left: 0%;
+}
+
+body #intro button {
+  display: none;
+}
+
+body #intro .text {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+}
+
+body #intro .text h1 {
+  color: white;
+  text-align: center;
+  font-size: 6.2rem;
+  letter-spacing: 4px;
+}
+
+body #intro .text form {
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+body #intro .text form input {
+  height: 7vh;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  padding: 10px;
+}
+
+body #intro .text form #mail {
+  width: 20%;
+  border-right: none;
+}
+
+body #intro .text form .submit {
+  width: 5%;
+}
+
+body #intro .text form h3 {
+  font-size: 3rem;
+  color: white;
+}
+
+body #intro .logo {
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+  left: 38%;
+  width: 25%;
+}
+
+body main {
+  font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body main center {
+  padding-top: 150px;
+  color: white;
+}
+
+body main center p {
+  font-size: 1.4rem;
+}
+
+body main center h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+
+body main center .newh1 {
+  font-size: 6rem;
+  letter-spacing: 5px;
+}
+
+body main center span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+body main #products {
+  margin-top: 200px;
+  color: white;
+}
+
+body main #products .thumbs {
+  padding: 0px 20px;
+  background-color: #372230;
+  border-radius: 50%;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+body main #products .thumbs:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+body main #products .thumbs img {
+  width: 100%;
+  -webkit-transform: rotateZ(5deg);
+          transform: rotateZ(5deg);
+}
+
+body main #products .thumbs .new {
+  margin-top: -100px;
+}
+
+body main #products .details {
+  margin-top: 10px;
+  padding: 50px 80px;
+}
+
+body main #products .details strong {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+body main #products .details span {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+body main #products .details h5 small {
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+body main #products .details p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+body main #products .details a {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+body main #products .details .buy {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+body main #products .details .sub {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+body main #product-B {
+  color: white;
+  padding: 10px 150px;
+}
+
+body main #product-B img {
+  width: 100%;
+}
+
+body main #product-B button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+body main .big-logo {
+  background-image: url(img/p.webp);
+  height: 100vh;
+}
+
+body main .big-logo img {
+  width: 25%;
+}
+
+body .shop-container {
+  background-color: white;
+  padding: 40px;
+}
+
+body .shop-container .shop {
+  background-image: url(img/n1.webp);
+  height: 100vh;
+}
+
+body .shop-container .shop h1 {
+  font-size: 5rem;
+  margin-top: 20px;
+}
+
+body .shop-container .shop button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+body .info {
+  color: white;
+}
+
+body .info h1 {
+  font-size: 8rem;
+}
+
+body .info .col-sm {
+  border: 1px solid #706e6e;
+  margin: 50px;
+  padding: 30px;
+}
+
+body .info .col-sm span {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+body .info .col-sm p {
+  font-size: 00.8rem;
+}
+
+body .recipe {
+  background-color: whitesmoke;
+  padding: 50px;
+}
+
+body .recipe h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #43283A;
+}
+
+body .recipe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #43283A;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+body .recipe-container a {
+  color: #43283A;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  word-spacing: 3px;
+}
+
+body .recipe-container img {
+  width: 20rem;
+  height: 25rem;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+body .recipe-container .recipe-thumb {
+  margin: 30px;
+  width: 20rem;
+  height: 45rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+body .recipe-container .recipe-thumb h2 {
+  text-transform: uppercase;
+}
+
+body .recipe-container .recipe-thumb:hover img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+body #jingle {
+  font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(60deg, rgba(37, 4, 17, 0.6), rgba(32, 3, 22, 0.7), rgba(0, 0, 0, 0.8)), url(img/s5.jpg);
+  padding-top: 100px;
+  background-size: cover;
+}
+
+body #jingle h1 {
+  color: white;
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+body #jingle p {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+body #jingle img {
+  width: 70%;
+}
+
+body footer {
+  font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  padding-top: 100px;
+  margin: 40px;
+}
+
+body footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 120px;
+}
+
+body footer ul li {
+  list-style: none;
+}
+
+body footer ul a {
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 0.6rem;
+}
+
+body footer .natra {
+  text-align: right;
+}
+
+body footer .natra strong {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+body footer .natra small {
+  font-size: 0.6rem;
+  font-weight: 100;
+}
+
+body footer form {
+  margin-top: 0px;
+}
+
+body footer form input {
+  height: 6vh;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+body footer form #mail {
+  width: 70%;
+  border-right: none;
+}
+
+body footer form h3 {
+  font-size: 3rem;
+}
+
+body footer span {
+  color: gray;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  body ::-webkit-scrollbar {
+    display: none;
+  }
+  body header {
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    z-index: 9999;
+  }
+  body header nav {
+    display: none;
+  }
+  body #intro {
+    font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    z-index: -1;
+  }
+  body #intro img {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    left: 0%;
+  }
+  body #intro button {
+    display: none;
+  }
+  body #intro .text {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+  }
+  body #intro .text h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+  body #intro .text form {
+    margin-top: 250px;
+    margin-left: 20px;
+  }
+  body #intro .text form #mail {
+    width: 80%;
+    border-right: none;
+  }
+  body #intro .text form .submit {
+    width: 15%;
+  }
+  body #intro .logo {
+    left: 16%;
+    width: 70%;
+    height: 20vh;
+  }
+  body main {
+    font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  body main center {
+    padding-top: 150px;
+    color: white;
+  }
+  body main center p {
+    font-size: 0.8rem;
+  }
+  body main center h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+  }
+  body main center .newh1 {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+  }
+  body main center span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  body main #products {
+    margin-top: 200px;
+    color: white;
+  }
+  body main #products .thumbs {
+    padding: 0px 20px;
+    background-color: #372230;
+    border-radius: 50%;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  body main #products .thumbs:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body main #products .thumbs img {
+    width: 100%;
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  body main #products .thumbs .new {
+    margin-top: -50px;
+  }
+  body main #products .details {
+    margin-top: 10px;
+    padding: 50px 20px;
+  }
+  body main #products .details strong {
+    font-size: 1.5rem;
+  }
+  body main #products .details span {
+    font-weight: 200;
+    font-size: 0.7rem;
+  }
+  body main #products .details h5 small {
+    font-size: 10px;
+  }
+  body main #products .details p {
+    font-size: 0.6rem;
+  }
+  body main #products .details a {
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  body main #products .details .buy {
+    font-size: 0.5rem;
+  }
+  body main #products .details .sub {
+    font-size: 0.5rem;
+  }
+  body main #product-B {
+    padding: 10px 50px;
+  }
+  body main .big-logo {
+    background-image: url(img/p.webp);
+    height: 70vh;
+  }
+  body main .big-logo img {
+    width: 45%;
+  }
+  body .shop-container {
+    padding: 10px;
+  }
+  body .shop-container .shop {
+    background-image: url(img/n1.webp);
+    background-size: cover;
+    height: 70vh;
+  }
+  body .shop-container .shop h1 {
+    font-size: 2rem;
+  }
+  body .shop-container .shop button {
+    font-size: 0.6rem;
+  }
+  body .info {
+    color: white;
+  }
+  body .info h1 {
+    font-size: 2rem;
+  }
+  body .info .col-sm {
+    border: 1px solid #706e6e;
+    margin: 40px;
+    padding: 30px;
+    width: 20rem;
+  }
+  body .info .col-sm span {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  body .info .col-sm p {
+    font-size: 0.8rem;
+  }
+  body .recipe {
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+  body .recipe h1 {
+    font-size: 1.4rem;
+    font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  body .recipe-container img {
+    width: 18rem;
+    height: 25rem;
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
+  }
+  body .recipe-container .recipe-thumb {
+    margin: 20px;
+    width: 20rem;
+    height: 38rem;
+  }
+  body .recipe-container .recipe-thumb h2 {
+    font-size: 1rem;
+  }
+  body .recipe-container .recipe-thumb p {
+    font-size: 0.7rem;
+  }
+  body #jingle {
+    padding-top: 100px;
+  }
+  body #jingle h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  body #jingle p {
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  body #jingle img {
+    width: 50%;
+  }
+  body .changes.nav-menu {
+    left: -10%;
+  }
+  body .changesclose.nav-menu {
+    left: -100%;
+  }
+  body .nav-mobile {
+    display: block;
+  }
+  body .nav-mobile ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 85%;
+    position: fixed;
+    top: 2%;
+    left: 0%;
+    z-index: 1;
+    list-style: none;
+  }
+  body .nav-mobile ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(37, 4, 17, 0.6);
+    padding: 10px 7px;
+    border-radius: 50%;
+  }
+  body .nav-menu {
+    font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: block;
+    background-color: #43283A;
+    height: 150vh;
+    position: fixed;
+    z-index: 22;
+    width: 100%;
+    top: 0%;
+    left: -100%;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    color: white;
+  }
+  body .nav-menu ul {
+    list-style: none;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 150px;
+  }
+  body .nav-menu ul li {
+    margin-top: 40px;
+  }
+  body .nav-menu ul li a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+  }
+  body .nav-menu .close {
+    position: absolute;
+    top: 1%;
+    left: 15%;
+    padding: 10px;
+    color: white;
+  }
+  body .nav-menu .close a {
+    border-radius: 50%;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    background-color: rgba(37, 4, 17, 0.9);
+  }
+  body footer {
+    font-family: "Viaoda Libre", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    padding-top: 20px;
+    margin: 40px;
+  }
+  body footer ul {
+    display: none;
+  }
+  body footer .natra {
+    text-align: right;
+    display: none;
+  }
+  body footer .natra strong {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  body footer .natra small {
+    font-size: 0.6rem;
+    font-weight: 100;
+  }
+  body footer form {
+    margin-top: 0px;
+  }
+  body footer form input {
+    height: 6vh;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+  }
+  body footer form #mail {
+    width: 70%;
+    border-right: none;
+  }
+  body footer form h3 {
+    font-size: 2rem;
+  }
+  body footer span {
+    color: gray;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
